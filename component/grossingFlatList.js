@@ -36,7 +36,7 @@ const GrossFlatList =(props)=>{
         <SkeletonContent
               containerStyle={{flexDirection: 'row'}}
               isLoading={isLoading}
-              layout={this.grossPlaceholder}>
+              layout={grossPlaceholder()}>
               <FlatList
                 data={data}
                 

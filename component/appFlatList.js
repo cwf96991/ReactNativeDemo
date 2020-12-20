@@ -62,7 +62,7 @@ const AppFlatList = React.forwardRef((props, ref) => {
         <SkeletonContent
             containerStyle={{ flexDirection: 'column' }}
             isLoading={isLoading}
-            layout={appPlaceholder}>
+            layout={appPlaceholder()}>
             <FlatList
                 data={
                     data
