@@ -36,8 +36,8 @@ cd ..
 react-native run-ios
 ```
 <p align="justify">
-  <img src="/images/loading.png" width="350" title="hover text">
-  <img src="/images/mainScreen.png" width="350" alt="accessibility text">
+  <img src="/images/loading.png" width="350" title="Loading Effect">
+  <img src="/images/mainScreen.png" width="350" alt="Main Screen">
 </p>
 
 
