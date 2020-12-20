@@ -15,7 +15,7 @@ import { SearchBar } from 'react-native-elements';
 import NetInfo from '@react-native-community/netinfo';
 import axios from 'axios';
 import AppModel from '../appModel';
-import {  GrossFlatList, AppFlatList } from "../component";
+import { GrossFlatList, AppFlatList } from "../component";
 
 
 const screenWidth = Math.round(Dimensions.get('window').width);
@@ -48,7 +48,7 @@ const MainPage = ({ navigation }) => {
     setList([]);
     LoadData();
   };
-  
+
   LoadData = () => {
     var resultList = list ?? [];
     axios
@@ -149,24 +149,24 @@ const MainPage = ({ navigation }) => {
       <View style={{ flex: 1, backgroundColor: 'white' }}>
         <StatusBar barStyle="default" />
         <SafeAreaView >
-          <View style={{height:screenHeight/6}}>
-          <SearchBar
-            platform={Platform.OS}
-            placeholder="Type Here..."
-            onChangeText={(value) => {
-              const tempList = list.filter((item) => {
-                const info = `${item.name.toLowerCase()}${item.category.toLowerCase()}`;
-                return info.includes(value.toLowerCase());
-              });
-              setSearch(value);
-              setFilteredList(tempList);
-            }}
-            onClear={(value) => {
-              setFilteredList([]);
-            }}
-            value={search}
-          />
-          <Text style={styles.headerText}>推介</Text>
+          <View style={{ height: screenHeight / 6 }}>
+            <SearchBar
+              platform={Platform.OS}
+              placeholder="Type Here..."
+              onChangeText={(value) => {
+                const tempList = list.filter((item) => {
+                  const info = `${item.name.toLowerCase()}${item.category.toLowerCase()}`;
+                  return info.includes(value.toLowerCase());
+                });
+                setSearch(value);
+                setFilteredList(tempList);
+              }}
+              onClear={(value) => {
+                setFilteredList([]);
+              }}
+              value={search}
+            />
+            <Text style={styles.headerText}>推介</Text>
           </View>
           <View>
             <View style={styles.suggestContainer}>
@@ -212,7 +212,7 @@ const styles = StyleSheet.create({
   },
 
   suggestContainer: {
-    height: screenHeight *1.5/6,
+    height: screenHeight * 1.5 / 6,
     width: screenWidth,
     backgroundColor: 'white',
   },
