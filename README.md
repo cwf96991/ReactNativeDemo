@@ -47,10 +47,10 @@ react-native run-ios
 * Search bar
 * Wwipe to refresh
 * Tap item to open in app browser and naivage to relavant website
+* Fast Image
 
 ## Future Plan
 
-*Add Cached Image
 ## Authors
 
 * **CWF** 
