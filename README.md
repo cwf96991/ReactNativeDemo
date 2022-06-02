@@ -45,7 +45,7 @@ react-native run-ios
 ## Feature
 
 * Search bar
-* Wwipe to refresh
+* wipe to refresh
 * Tap item to open in app browser and naivage to relavant website
 * Fast Image
 
